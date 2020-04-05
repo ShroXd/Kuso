@@ -17,9 +17,9 @@
             "path": "/component",
             "items": [
                 {
-                    "desc": "Layout 布局",
-                    "name": "layout",
-                    "path": "/layout"
+                    "desc": "Button 按钮",
+                    "name": "button",
+                    "path": "/button"
                 }
             ]
         }

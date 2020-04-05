@@ -55,7 +55,7 @@ export default {
   width: 100%;
   text-align: center;
   display: inline-block;
-  color: #c5d9e8;
+  color: #57606f;
   font-size: 12px;
   padding: 10px 0;
   background-color: #fafbfc;

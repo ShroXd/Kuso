@@ -52,7 +52,7 @@
 
       .title {
         display: inline-block;
-        width: 3.5rem;
+        width: 3.8rem;
       }
 
       & div {

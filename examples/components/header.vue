@@ -1,9 +1,9 @@
 <template>
   <header class="page-header">
     <div class="page-header-container">
-      <router-link :to="{name: 'link'}"><img src="../assets/img/logo.png"
-             width="40"></router-link>
-      <router-link :to="{name: 'giud'}">组件</router-link>
+      <router-link :to="{name: 'index'}"><img src="../assets/img/logo.png"
+             width="50"></router-link>
+      <!-- <router-link :to="{name: 'giud'}">组件</router-link> -->
     </div>
   </header>
 </template>
