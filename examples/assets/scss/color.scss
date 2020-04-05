@@ -11,14 +11,14 @@
   --sys_base_color_purple: rgb(175, 82, 222);
   --sys_base_color_yellow: rgb(255, 204, 0);
 
-  --sys_title: light(#000000, 85%);
-  --sys_primary-text: light(#000000, 65%);
-  --sys_secondary-text: light(#000000, 45%);
-  --sys_disable: light(#000000, 25%);
-  --sys_border: light(#000000, 15%);
-  --sys_dividers: light(#000000, 9%);
-  --sys_background: light(#000000, 4%);
-  --sys_table-header: light(#000000, 2%);
+  --sys_title: rgba(0, 0, 0, .85);
+  --sys_primary-text: rgba(0, 0, 0, .65);
+  --sys_secondary-text: rgba(0, 0, 0, .45);
+  --sys_disable: rgba(0, 0, 0, .25);
+  --sys_border: rgba(0, 0, 0, .15);
+  --sys_dividers: rgba(0, 0, 0, .09);
+  --sys_background: rgba(0, 0, 0, .04);
+  --sys_table-header: rgba(0, 0, 0, .02);
 }
 
 /* Dark */
@@ -35,14 +35,14 @@
     --sys_base_color_purple: rgb(191, 90, 242);
     --sys_base_color_yellow: rgb(255, 214, 10);
 
-    --sys_title: light(#ffffff, 100%);
-    --sys_primary-text: light(#ffffff, 85%);
-    --sys_secondary-text: light(#ffffff, 65%);
-    --sys_disable: light(#ffffff, 45%);
-    --sys_border: light(#ffffff, 25%);
-    --sys_dividers: light(#ffffff, 15%);
-    --sys_background: light(#ffffff, 9%);
-    --sys_table-header: light(#ffffff, 4%);
+    --sys_title: rgba(255, 255, 255, 1);
+    --sys_primary-text: rgba(255, 255, 255, .85);
+    --sys_secondary-text: rgba(255, 255, 255, .65);
+    --sys_disable: rgba(255, 255, 255, .45);
+    --sys_border: rgba(255, 255, 255, .25);
+    --sys_dividers: rgba(255, 255, 255, .15);
+    --sys_background: rgba(255, 255, 255, .09);
+    --sys_table-header: rgba(255, 255, 255, .04);
   }
 }
 
