@@ -39,7 +39,7 @@ export default {
 .side-navi {
   width: 15vw;
   padding: 1rem;
-  border-right: 1px solid $_sys_component_border;
+  border-right: 1px solid $_sys_component_divider;
 
   .main-title {
       font-size: .8rem;

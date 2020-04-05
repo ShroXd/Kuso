@@ -1,28 +1,34 @@
 @import "./color.scss";
 
+
+@mixin hn($rate) {
+  font-size: 2rem * $rate;
+  font-weight: 700 * $rate;
+}
+
 section {
-  color: #57606f;
+  color: $_sys_color_mid-blur-gray;
 }
 
 h1 {
-  font-size: 2.6rem;
+  @include hn(0.9);
 }
 
 h2 {
-  font-size: 2rem;
+  @include hn(0.7);
 }
 
 h3 {
-  font-size: 1.4rem;
+  @include hn(0.5);
 }
 
 h4 {
-  font-size: 1rem;
+  @include hn(0.4);
 }
 
 hr {
   border: 0;
-  border-bottom: 1px solid $_sys_color_red;
+  border-bottom: 1px solid $_sys_component_divider;
 }
 
 p {
@@ -34,7 +40,7 @@ p {
 pre {
   margin: 16px 0;
   padding: 16px;
-  background-color: #F7F7F7;
+  background-color: $_sys_component_code-background;
   overflow: auto;
 }
 
@@ -42,9 +48,9 @@ code {
   padding: .3em .5em;
   font-size: .9em;
   vertical-align: middle;
-  border: 1px solid #ECECEC;
+  border: 1px solid $_sys_component_border;
   border-radius: 2px;
-  background-color: #F7F7F7;
+  background-color: $_sys_component_code-background;
 }
 
 code.code_inline {
@@ -56,8 +62,8 @@ code.code_inline {
 table {
   display: block;
   width: 100%;
-  background-color: #fff;
-  color: #5e6d82;
+  background-color: $_sys_component_table-background;
+  color: $_sys_component_table-color;
   font-size: 14px;
   border-collapse: collapse;
   overflow: auto;
@@ -65,14 +71,14 @@ table {
 }
 
 th {
-  border-top: 1px solid #f3f7fa;
-  background-color: #FAFBFC;
-  border-bottom: 1px solid #f3f7fa;
+  border-top: 1px solid $_sys_component_table-border;
+  background-color:$_sys_color_super-light-gray;
+  border-bottom: 1px solid $_sys_component_table-border;
   padding: 10px 8px;
 }
 
 td {
-  border-top: 1px solid #f3f7fa;
-  border-bottom: 1px solid #f3f7fa;
+  border-top: 1px solid $_sys_component_table-border;
+  border-bottom: 1px solid $_sys_component_table-border;
   padding: 10px 8px;
 }
