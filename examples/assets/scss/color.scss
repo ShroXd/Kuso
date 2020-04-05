@@ -1,29 +1,79 @@
-$_sys_color_red: #ff4757;
-$_sys_color_yellow: #FFEB3B;
-$_sys_color_orange: #ffa502;
-$_sys_color_green: #2ed573;
-$_sys_color_blue: #1e90ff;
-$_sys_color_blue-gray: #607D8B;
-$_sys_color_light-blue-gray: #a4b0be;
-$_sys_color_mid-blur-gray: #57606f;
-$_sys_color_heavy-blue-gray: #2f3542;
-$_sys_color_gray: #9E9E9E;
-$_sys_color_light-gray: #dfe4ea;
-$_sys_color_super-light-gray: #F7F7F7;
-$_sys_color_black: #212121;
-$_sys_color_white: white;
+/* Light */
+:root {
+  --sys_base_color_red: rgb(255, 59, 48);
+  --sys_base_color_light-red: rgb(255, 45, 85);
+  --sys_base_color_blue: rgb(0, 122, 255);
+  --sys_base_color_light-blue: rgb(90, 200, 250);
+  --sys_base_color_heavy-blue: rgb(88, 86, 214);
+  --sys_base_color_gray: rgb(142, 142, 147);
+  --sys_base_color_green: rgb(52, 199, 89);
+  --sys_base_color_orange: rgb(255, 149, 0);
+  --sys_base_color_purple: rgb(175, 82, 222);
+  --sys_base_color_yellow: rgb(255, 204, 0);
+
+  --sys_title: light(#000000, 85%);
+  --sys_primary-text: light(#000000, 65%);
+  --sys_secondary-text: light(#000000, 45%);
+  --sys_disable: light(#000000, 25%);
+  --sys_border: light(#000000, 15%);
+  --sys_dividers: light(#000000, 9%);
+  --sys_background: light(#000000, 4%);
+  --sys_table-header: light(#000000, 2%);
+}
+
+/* Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sys_base_color_red: rgb(255, 69, 58);
+    --sys_base_color_light-red: rgb(255, 55, 95);
+    --sys_base_color_blue: rgb(10, 132, 255);
+    --sys_base_color_light-blue: rgb(100, 210, 255);
+    --sys_base_color_heavy-blue: rgb(94, 92, 230);
+    --sys_base_color_gray: rgb(152, 152, 157);
+    --sys_base_color_green: rgb(48, 209, 88);
+    --sys_base_color_orange: rgb(255, 159, 10);
+    --sys_base_color_purple: rgb(191, 90, 242);
+    --sys_base_color_yellow: rgb(255, 214, 10);
+
+    --sys_title: light(#ffffff, 100%);
+    --sys_primary-text: light(#ffffff, 85%);
+    --sys_secondary-text: light(#ffffff, 65%);
+    --sys_disable: light(#ffffff, 45%);
+    --sys_border: light(#ffffff, 25%);
+    --sys_dividers: light(#ffffff, 15%);
+    --sys_background: light(#ffffff, 9%);
+    --sys_table-header: light(#ffffff, 4%);
+  }
+}
+
+$_sys_color_00dp_black: #2c2d2c;
+$_sys_color_01dp_black: #363736;
+$_sys_color_02dp_black: #3a3b3a;
+$_sys_color_03dp_black: #3c3d3c;
+$_sys_color_04dp_black: #3f3f3f;
+$_sys_color_06dp_black: #434443;
+$_sys_color_08dp_black: #454645;
+$_sys_color_12dp_black: #494a49;
+$_sys_color_16dp_black: #4b4c4b;
+$_sys_color_24dp_black: #4d4e4d;
 
 
-$_sys_component_shadow: rgba(29, 29, 31, 0.07);
-$_sys_component_border: $_sys_color_light-gray;
-$_sys_component_divider: rgba(223, 225, 230, 0.5);
+$_sys_color_red: var(--sys_base_color_red);
+$_sys_color_light-red: var(--sys_base_color_light-red);
+$_sys_color_blue: var(--sys_base_color_blue);
+$_sys_color_light_blue: var(--sys_base_color_light-blue);
+$_sys_color_heavy_blue: var(--sys_base_color_heavy-blue);
+$_sys_color_gray: var(--sys_base_color_gray);
+$_sys_color_green: var(--sys_base_color_green);
+$_sys_color_orange: var(--sys_base_color_orange);
+$_sys_color_purple: var(--sys_base_color_purple);
+$_sys_color_yellow: var(--sys_base_color_yellow);
 
-/* Markdown Table */
-$_sys_component_table-th: $_sys_color_super-light-gray;
-$_sys_component_table-border: #f3f7fa;
-$_sys_component_table-color: $_sys_color_mid-blur-gray;
-$_sys_component_table-background: $_sys_color_white;
-/* Markdown Code */
-$_sys_component_code-background: #F7F7F7;
-
-$_sys_font_active-link: $_sys_color_blue;
+$_sys_title: var(--sys_title);
+$_sys_primary-text: var(--sys_primary-text);
+$_sys_secondary-text: var(--sys_secondary-text);
+$_sys_disable: var(--sys_disable);
+$_sys_border: var(--sys_border);
+$_sys_dividers: var(--sys_dividers);
+$_sys_background: var(--sys_background);
+$_sys_table-header: var(--sys_table-header);
