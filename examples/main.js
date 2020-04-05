@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 
 import './assets/scss/index.scss'
+import demoBlock from './components/demo-block.vue'
 
+Vue.component('demo-block', demoBlock)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
