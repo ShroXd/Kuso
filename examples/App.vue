@@ -1,23 +1,39 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <main-header></main-header>
+    <div class="docs"
+         v-if="!isIndex">
+      <side-navi></side-navi>
+      <router-view></router-view>
+    </div>
+    <template v-else>
+      <router-view></router-view>
+    </template>
+    <main-footer v-if="!isIndex"></main-footer>
   </div>
 </template>
 
 <script>
+import mainHeader from './components/header'
+import mainFooter from './components/footer'
+import sideNavi from './components/side-navi'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    mainHeader,
+    mainFooter,
+    sideNavi
+  },
+  watch: {
+    $route () {
+      this.isIndex = this.$route.name === 'index'
+    }
+  },
+  data () {
+    return {
+      isIndex: true
+    }
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

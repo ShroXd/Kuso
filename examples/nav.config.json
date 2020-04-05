@@ -1,0 +1,27 @@
+{
+    "开发指南": [
+        {
+            "name": "index",
+            "path": "/",
+            "type": "pages"
+        },
+        {
+            "name": "guid",
+            "path": "/guid",
+            "desc": "介绍"
+        }
+    ],
+    "组件": [
+        {
+            "desc": "基础组件",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "Layout 布局",
+                    "name": "layout",
+                    "path": "/layout"
+                }
+            ]
+        }
+    ]
+}

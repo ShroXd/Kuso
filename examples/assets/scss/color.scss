@@ -1,1 +1,18 @@
-$red: blue;
+$_sys_color_red: #ff4757;
+$_sys_color_yellow: #FFEB3B;
+$_sys_color_orange: #ffa502;
+$_sys_color_green: #2ed573;
+$_sys_color_blue: #1e90ff;
+$_sys_color_blue-gray: #607D8B;
+$_sys_color_light-blue-gray: #a4b0be;
+$_sys_color_heavy-blue-gray: #2f3542;
+$_sys_color_gray: #9E9E9E;
+$_sys_color_light-gray: #dfe4ea;
+$_sys_color_black: #212121;
+$_sys_color_white: #FAFAFA;
+
+$_sys_component_shadow: rgba(29, 29, 31, 0.07);
+$_sys_component_border: rgba(223, 225, 230, 0.5);
+$_sys_component_divider: $_sys_color_light-gray;
+
+$_sys_font_active-link: $_sys_color_blue;
