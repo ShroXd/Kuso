@@ -7,6 +7,14 @@
 }
 
 section {
+  .demo-block {
+    padding: 32px;
+    border: 1px solid var(--sys_border);
+    border-radius: 4px 4px 0 0;
+    background-color: var(--sys_page_background);
+    margin-top: 16px;
+  }
+
   color: var(--sys_primary-text);
 }
 
@@ -75,8 +83,9 @@ table {
 }
 
 th {
+    
   border-top: 1px solid var(--sys_border);
-  background-color: var(--sys_func-btn);
+  background-color: var(--sys_func);
   border-bottom: 1px solid var(--sys_border);
   padding: 10px 8px;
 }
