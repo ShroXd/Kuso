@@ -69,14 +69,14 @@
       .title {
         display: inline-block;
         width: 3.8rem;
-        color: var(--sys_secondary-text);
+        color: var(--sys_title);
         &:after {
           content: ": ";
         }
       }
 
       .filed {
-          color: var(--sys_third-text);
+          color: var(--sys_primary-text);
       }
 
       & div {
