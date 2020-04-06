@@ -37,12 +37,11 @@ export default {
 
   .divider {
     width: 100%;
-    height: 30vh;
+    height: 3vh;
     transform: skewY(-4deg);
     position: absolute;
     top: 46rem;
     box-shadow: 0 -10px 20px -2px rgba(29, 29, 31, 0.07);
-    z-index: -1;
   }
 
   .func-container {

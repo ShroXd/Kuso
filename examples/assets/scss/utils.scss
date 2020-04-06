@@ -1,0 +1,9 @@
+@import "./color.scss";
+
+@mixin hierarchy($level) {
+  box-shadow: 0 2px #{$level}px 0 $_sys_border;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $_sys_border;
+  }
+}

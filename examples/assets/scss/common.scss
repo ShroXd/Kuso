@@ -12,12 +12,29 @@ body {
   width: 100vw;
 }
 
+#app {
+  background-color: var(--sys_base_background);
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  .docs {
+    background: var(--sys_page_background);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .docs {
+    box-shadow: 0 1px 6px 0 var(--sys_shadow);
+  }
+}
+
 .docs {
   width: 90vw;
   min-height: 74vh;
   margin: 1rem auto;
   padding: 1rem;
-  box-shadow: 0 4px 30px 0 rgba(29, 29, 31, 0.07);
+  // box-shadow: 0 4px 30px 0 rgba(29, 29, 31, 0.07);
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 24% 70%;

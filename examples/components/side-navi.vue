@@ -35,35 +35,34 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/color.scss";
-
 .side-navi {
   width: 15vw;
   padding: 1rem;
-  border-right: 1px solid $_sys_component_divider;
+  border-right: 1px solid var(--sys_dividers);
 
   .main-title {
       font-size: .8rem;
-      color: $_sys_color_light-blue-gray;
+      color: var(--sys_title);
       line-height: 3.5rem;
   }
 
   .sub-title {
       font-weight: 500;
-      color: $_sys_color_heavy-blue-gray;
+      color: var(--sys_primary-text);
       line-height: 2.5rem;
   }
 
   .navi-title {
       font-size: .9rem;
       text-decoration: none;
-      color: $_sys_color_blue-gray;
+      color: var(--sys_secondary-text);
       line-height: 1.5rem;
   }
 
   .navi-title-active {
       font-size: .9rem;
       text-decoration: none;
-      color: $_sys_font_active-link;
+      color: var(--sys_base_color_blue);
       line-height: 1.5rem;
   }
 }

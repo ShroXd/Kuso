@@ -14,11 +14,18 @@
   --sys_title: rgba(0, 0, 0, .85);
   --sys_primary-text: rgba(0, 0, 0, .65);
   --sys_secondary-text: rgba(0, 0, 0, .45);
+  --sys_third-text: rgba(0, 0, 0, .30);
   --sys_disable: rgba(0, 0, 0, .25);
   --sys_border: rgba(0, 0, 0, .15);
   --sys_dividers: rgba(0, 0, 0, .09);
-  --sys_background: rgba(0, 0, 0, .04);
+
   --sys_table-header: rgba(0, 0, 0, .02);
+  --sys_code-background: #f7f7f7;
+  --sys_base_background: white;
+  --sys_page_background: white;
+  --sys_component_background: #f7f7f7;
+  --sys_shadow: rgba(223, 225, 230, 0.8);
+  --sys_func-btn: #fafbfc;
 }
 
 /* Dark */
@@ -38,13 +45,50 @@
     --sys_title: rgba(255, 255, 255, 1);
     --sys_primary-text: rgba(255, 255, 255, .85);
     --sys_secondary-text: rgba(255, 255, 255, .65);
+    --sys_third-text: rgba(255, 255, 255, .50);
     --sys_disable: rgba(255, 255, 255, .45);
     --sys_border: rgba(255, 255, 255, .25);
     --sys_dividers: rgba(255, 255, 255, .15);
-    --sys_background: rgba(255, 255, 255, .09);
-    --sys_table-header: rgba(255, 255, 255, .04);
+
+    --sys_table-header: rgba(0, 0, 0, .02);
+    --sys_code-background: #f7f7f7;
+    --sys_base_background: #2c2d2c;
+    --sys_page_background: #363736;
+    --sys_component_background: #454645;
+    --sys_shadow: rgba(223, 225, 230, 0.8);
+    --sys_func-btn: #2c2d2c;
   }
 }
+
+[data-theme="dark"] {
+  --sys_base_color_red: rgb(255, 69, 58);
+  --sys_base_color_light-red: rgb(255, 55, 95);
+  --sys_base_color_blue: rgb(10, 132, 255);
+  --sys_base_color_light-blue: rgb(100, 210, 255);
+  --sys_base_color_heavy-blue: rgb(94, 92, 230);
+  --sys_base_color_gray: rgb(152, 152, 157);
+  --sys_base_color_green: rgb(48, 209, 88);
+  --sys_base_color_orange: rgb(255, 159, 10);
+  --sys_base_color_purple: rgb(191, 90, 242);
+  --sys_base_color_yellow: rgb(255, 214, 10);
+
+  --sys_title: rgba(255, 255, 255, 1);
+  --sys_primary-text: rgba(255, 255, 255, .85);
+  --sys_secondary-text: rgba(255, 255, 255, .65);
+  --sys_third-text: rgba(255, 255, 255, .50);
+  --sys_disable: rgba(255, 255, 255, .45);
+  --sys_border: rgba(255, 255, 255, .25);
+  --sys_dividers: rgba(255, 255, 255, .15);
+
+  --sys_table-header: rgba(0, 0, 0, .02);
+  --sys_code-background: #f7f7f7;
+  --sys_base_background: #2c2d2c;
+  --sys_page_background: #3c3d3c;
+  --sys_component_background: #454645;
+  --sys_shadow: rgba(223, 225, 230, 0.8);
+  --sys_func-btn: #2c2d2c;
+}
+
 
 $_sys_color_00dp_black: #2c2d2c;
 $_sys_color_01dp_black: #363736;
@@ -56,7 +100,6 @@ $_sys_color_08dp_black: #454645;
 $_sys_color_12dp_black: #494a49;
 $_sys_color_16dp_black: #4b4c4b;
 $_sys_color_24dp_black: #4d4e4d;
-
 
 $_sys_color_red: var(--sys_base_color_red);
 $_sys_color_light-red: var(--sys_base_color_light-red);

@@ -10,9 +10,20 @@
 
 <style lang="scss">
 @import "../assets/scss/color.scss";
+
+@media (prefers-color-scheme: dark) {
+  .page-header {
+    background: var(--sys_page_background);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page-header {
+    box-shadow: 0 1px 6px 0 var(--sys_shadow);
+  }
+}
+
 .page-header {
-  background-color: #fff;
-  box-shadow: 0 10px 40px 0 $_sys_component_shadow;
   position: relative !important;
   top: 0;
   left: 0;

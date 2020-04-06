@@ -2,7 +2,8 @@
   <div class="page-footer">
     <div class="page-footer-container">
       <div class="avatars">
-        <a href="https://www.bebopser.com/" target="_blank">
+        <a href="https://www.bebopser.com/"
+           target="_blank">
           <img src="https://bebopfzj.oss-cn-hangzhou.aliyuncs.com/uPic/2020-03-09-bxgaD3.png"
                width="100">
         </a>
@@ -22,7 +23,8 @@
         </div>
       </div>
       <div class="github">
-        <a href="https://github.com/ShroXd" target="_blank">
+        <a href="https://github.com/ShroXd"
+           target="_blank">
           <img src="https://bebopfzj.oss-cn-hangzhou.aliyuncs.com/uPic/2020-04-03-9hUP1g.png"
                width="100">
         </a>
@@ -33,10 +35,24 @@
 
 <style lang="scss">
 @import "../assets/scss/color.scss";
+@import "../assets/scss/utils.scss";
+
+@media (prefers-color-scheme: dark) {
+  .page-footer {
+    background: var(--sys_page_background);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page-footer {
+    box-shadow: 0 -1px 6px 0 var(--sys_shadow);
+  }
+}
+
 .page-footer {
   width: 100%;
   padding: 1.5rem 1rem;
-  box-shadow: 0 10px 40px 0 $_sys_component_shadow;
+
   position: relative;
   bottom: 0;
   &-container {
@@ -53,19 +69,18 @@
       .title {
         display: inline-block;
         width: 3.8rem;
+        color: var(--sys_secondary-text);
+        &:after {
+          content: ": ";
+        }
+      }
+
+      .filed {
+          color: var(--sys_third-text);
       }
 
       & div {
         flex-basis: 100%;
-      }
-
-      & .title {
-        color: $_sys_color_gray;
-
-        &:after {
-          content: ": ";
-          color: $_sys_color_gray;
-        }
       }
     }
   }

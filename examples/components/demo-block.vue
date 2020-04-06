@@ -42,9 +42,8 @@ export default {
   height: auto;
   box-sizing: border-box;
   font-size: 14px;
-  background-color: #f7f7f7;
-  border: 1px solid #e2ecf4;
-  border-top: none;
+  background-color: var(--sys_component_background);
+  border: 1px solid var(--sys_func-btn);
   pre code {
     font-family: Consolas, Menlo, Courier, monospace;
     line-height: 22px;
@@ -55,10 +54,10 @@ export default {
   width: 100%;
   text-align: center;
   display: inline-block;
-  color: #57606f;
+  color: var(--sys_title);
   font-size: 12px;
   padding: 10px 0;
-  background-color: #fafbfc;
+  background-color: var(--sys_func-btn);
 }
 
 .docs-demo__code,
